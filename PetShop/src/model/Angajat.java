@@ -1,6 +1,9 @@
 package model;
 
+import java.util.List;
+
 public class Angajat {
+	
 	private int idAngajat;
 
 	private String nume;
@@ -9,18 +12,20 @@ public class Angajat {
 
 	private float salariu;
 
-	private int idPetShopAngajat;
+	private int idPetShop;
+	
+	private List<AngajatDepartament> repartizare;
 
 	public Angajat() {
 
 	}
 
-	public Angajat(int id, String nume, String prenume, float salariu, int idPetShopAngajat) {
+	public Angajat(int id, String nume, String prenume, float salariu, int idPetShop) {
 		this.idAngajat = id;
 		this.nume = nume;
 		this.prenume = prenume;
 		this.salariu = salariu;
-		this.idPetShopAngajat = idPetShopAngajat;
+		this.idPetShop = idPetShop;
 	}
 
 	public int getIdAngajat() {
@@ -55,19 +60,26 @@ public class Angajat {
 		this.salariu = salariu;
 	}
 
-	public int getIdPetShopAngajat() {
-		return idPetShopAngajat;
+	public int getPetShop() {
+		return idPetShop;
 	}
 
-	public void setIdPetShopAngajat(int idPetShopAngajat) {
-		this.idPetShopAngajat = idPetShopAngajat;
+	public void setPetShop(int  idPetShop) {
+		this.idPetShop = idPetShop;
 	}
 
 	@Override
 	public String toString() {
 		
-		return idAngajat + " " + nume + " " + prenume + " " + salariu
-				+ " " + idPetShopAngajat;
+		return idAngajat + " " + nume + " " + prenume + " " + salariu;
+	}
+
+	public List<AngajatDepartament> getRepartizare() {
+		return repartizare;
+	}
+
+	public void setRepartizare(List<AngajatDepartament> repartizare) {
+		this.repartizare = repartizare;
 	}
 
 }
