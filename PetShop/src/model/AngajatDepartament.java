@@ -5,9 +5,10 @@ public class AngajatDepartament {
 	private int index;
 	private int idAngajat;
 	private int idDepartament;
-	
-	public AngajatDepartament() {}
-	
+
+	public AngajatDepartament() {
+	}
+
 	public AngajatDepartament(int idAngajat, int idDepartament) {
 		this.idAngajat = idAngajat;
 		this.idDepartament = idDepartament;
@@ -47,6 +48,5 @@ public class AngajatDepartament {
 	public String toString() {
 		return "Repartizare angajat-departament: " + index + " " + idAngajat + " " + idDepartament;
 	}
-	
-	
+
 }

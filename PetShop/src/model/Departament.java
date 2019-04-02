@@ -9,12 +9,15 @@ public class Departament {
 	private int nrRaioane;
 	private List<AngajatDepartament> repartizare;
 
-	public Departament() {}
-	public Departament(int id, String nume,int nrRaioane) {
+	public Departament() {
+	}
+
+	public Departament(int id, String nume, int nrRaioane) {
 		this.idDepartament = id;
 		this.denumire = nume;
 		this.nrRaioane = nrRaioane;
-		}
+	}
+
 	public int getIdDepartament() {
 		return idDepartament;
 	}

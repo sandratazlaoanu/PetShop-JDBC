@@ -67,7 +67,6 @@ public class MenuClass {
 						System.out.println("Numar raioane alocate: ");
 						int numarRaioane = Integer.parseInt(reader.readLine());
 						controller.createDepartament(idDepartament, denumire, numarRaioane);
-
 						break;
 					}
 					break;
@@ -89,6 +88,7 @@ public class MenuClass {
 					System.out.println("Id: ");
 					int idAngajatToDelete = Integer.parseInt(reader.readLine());
 					controller.deleteAngajat(idAngajatToDelete);
+					break;
 				}
 
 				break;
@@ -128,7 +128,6 @@ public class MenuClass {
 						System.out.println("Suma: ");
 						float suma = Float.parseFloat(reader.readLine());
 						controller.createBonFiscal(idBonFiscal, data, suma, idClient);
-
 						break;
 					}
 					break;
@@ -140,7 +139,6 @@ public class MenuClass {
 					String numeNouClient = reader.readLine();
 					System.out.println("Prenume: ");
 					String prenumeNouClient = reader.readLine();
-
 					controller.updateClient(idClientToUpdate, numeNouClient, prenumeNouClient);
 					break;
 
@@ -149,6 +147,7 @@ public class MenuClass {
 					System.out.println("Id: ");
 					int idClientToDelete = Integer.parseInt(reader.readLine());
 					controller.deleteClient(idClientToDelete);
+					break;
 				}
 
 				break;
@@ -181,7 +180,6 @@ public class MenuClass {
 					Date dataToUpdate = Date.valueOf(reader.readLine());
 					System.out.println("Suma: ");
 					Float sumaToUpdate = Float.parseFloat(reader.readLine());
-
 					controller.updateBonFiscal(idBonFiscalToUpdate, dataToUpdate, sumaToUpdate);
 					break;
 

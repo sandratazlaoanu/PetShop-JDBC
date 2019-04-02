@@ -48,13 +48,11 @@ public class PetShopController {
 		if (angajatOperations.checkAngajat(id) == true)
 			System.out.println("Angajat existent.");
 		Angajat angajatToAdd = new Angajat(id, nume, prenume, salariu, idPetShop);
-
-		System.out.println("Before adding...");
 		List<Angajat> angajati = angajatOperations.getAllAngajati();
-		angajatOperations.printListOfAngajati(angajati);
-		angajatOperations.addAngajat(angajatToAdd);
 		System.out.println("After adding...");
+		angajatOperations.addAngajat(angajatToAdd);
 		angajatOperations.printListOfAngajati(angajati);
+
 	}
 
 	public void updateAngajat(int id, String nume, String prenume, float salariu) {

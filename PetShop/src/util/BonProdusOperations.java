@@ -84,8 +84,7 @@ public class BonProdusOperations {
 	public boolean updateBonProdus(int idToCheck, int idBonFiscal, int idProdus) {
 		databaseConnection.createConnection();
 
-		String query = "UPDATE bonprodus SET indexBonFiscal=?, indexProdus=? WHERE index = \"" + idToCheck
-				+ "\"";
+		String query = "UPDATE bonprodus SET indexBonFiscal=?, indexProdus=? WHERE index = \"" + idToCheck + "\"";
 		PreparedStatement ps = null;
 
 		try {

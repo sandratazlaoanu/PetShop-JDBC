@@ -3,7 +3,7 @@ package model;
 import java.util.List;
 
 public class Angajat {
-	
+
 	private int idAngajat;
 
 	private String nume;
@@ -13,7 +13,7 @@ public class Angajat {
 	private float salariu;
 
 	private int idPetShop;
-	
+
 	private List<AngajatDepartament> repartizare;
 
 	public Angajat() {
@@ -64,13 +64,13 @@ public class Angajat {
 		return idPetShop;
 	}
 
-	public void setPetShop(int  idPetShop) {
+	public void setPetShop(int idPetShop) {
 		this.idPetShop = idPetShop;
 	}
 
 	@Override
 	public String toString() {
-		
+
 		return idAngajat + " " + nume + " " + prenume + " " + salariu;
 	}
 

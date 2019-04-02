@@ -193,8 +193,8 @@ public class ProdusOperations {
 
 	public List<Produs> getAllProduseFromFurnizor(int idFurnizor) {
 		databaseConnection.createConnection();
-		String query = "SELECT produs.idProdus, produs.denumire, produs.cantitate, produs.pret FROM produs INNER JOIN furnizor \r\n"
-				+ "ON produs.idFurnizor = furnizor.idFurnizor WHERE furnizor.idFurnizor = \"" + idFurnizor + "\"";
+		String query = "SELECT produs.idProdus, produs.denumire, produs.cantitate, produs.pret FROM produs INNER JOIN furnizor "
+				+ " ON produs.idFurnizor = furnizor.idFurnizor WHERE furnizor.idFurnizor = \"" + idFurnizor + "\"";
 		List<Produs> produse = new ArrayList<Produs>();
 		PreparedStatement ps = null;
 		ResultSet rs = null;
